@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Displays numbers from 1 to 100 in list format,
+# if number % 3 is zero then it's a buzz
+# if number % 5 is zero then it's a fizz
+# if both then it's a fizzbuzz
+
+for number in {1..100}
+do
+  if (( number % 3 == 0 && number % 5 == 0 ))
+  then
+    echo "FizzBuzz"
+  elif (( number % 3 == 0 ))
+  then
+    echo "Fizz"
+  elif (( number % 5 == 0 ))
+  then
+    echo "Buzz"
+  else
+    echo "$number"
+  fi
+done
