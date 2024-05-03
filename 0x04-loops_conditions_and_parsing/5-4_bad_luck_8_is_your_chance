@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Displays bad luck if 4, good luck if 8 and best school if else, for 1 to 10.
+
+n=0
+
+while [ $n -lt 10 ]
+do
+	if [ $n -eq 4 ]
+	then
+		echo "bad luck"
+	elif [ $n -eq 8 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	(( n++ ))
+done
