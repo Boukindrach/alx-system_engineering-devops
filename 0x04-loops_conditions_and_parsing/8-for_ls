@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # Displays the contents of the current directory in list format.
 
-list=$(ls)
-for n in $list; do
-  echo "$i" | cut -d '-' -f2
+for item in *; do
+    if [ -f "$item" ] || [ -d "$item" ]; then
+        name=$(echo "$item" | cut -d '-' -f 2-)
+        echo "$name"
+    fi
 done
