@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import requests
 
 def top_ten(subreddit):
@@ -7,7 +8,6 @@ def top_ten(subreddit):
     }
 
     try:
-        # Make the request
         response = requests.get(url, headers=headers, allow_redirects=False)
 
         if response.status_code == 200:
