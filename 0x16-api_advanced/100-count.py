@@ -1,14 +1,12 @@
-#!/usr/bin/python3
-"""Reddit API word counting function"""
 
 #!/usr/bin/python3
-
+""""""
 import requests
 from collections import Counter
-after=""
-word_counts=None
 
-def count_words(subreddit, word_list):
+
+
+def count_words(subreddit, word_list, after="", word_counts=None):
     """Count occurrences of words in hot post titles of a subreddit"""
     if word_counts is None:
         word_counts = Counter()
@@ -27,12 +25,10 @@ def count_words(subreddit, word_list):
         if data['after']:
             return count_words(subreddit, word_list, data['after'], word_counts)
         else:
-            # Merge counts for case-insensitive duplicates
             merged_counts = Counter()
             for word in word_list:
                 merged_counts[word.lower()] += word_counts[word.lower()]
 
-            # Sort and print results
             for word, count in sorted(merged_counts.items(), key=lambda x: (-x[1], x[0])):
                 if count > 0:
                     print(f"{word}: {count}")
