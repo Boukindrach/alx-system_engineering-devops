@@ -1,10 +1,12 @@
 #!/usr/bin/python3
+
 """
 Reddit's API
 """
 import requests
+after=None
 
-def recurse(subreddit, hot_list=None, after=None):
+def recurse(subreddit, hot_list=[]):
     """
     Returns top post titles recursively for a given subreddit.
     """
