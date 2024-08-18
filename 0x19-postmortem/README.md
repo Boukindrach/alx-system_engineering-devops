@@ -7,13 +7,21 @@ Timeline:
 May 1 - Project kickoff, began with user authentication and basic listing display.
 
 May 10 - Completed user profiles and property listing creation features.
+
 May 15 - Started work on the booking system, realized it was more complex than anticipated.
+
 May 20 - Struggled with date range selection and conflict checking in bookings.
+
 May 25 - Shifted focus to the UI to make progress, encountered responsive design issues.
+
 May 31 - Missed initial deadline; re-evaluated project scope and timeline.
+
 June 5 - Returned to booking system, implemented basic functionality without conflict checking.
+
 June 10 - Resolved major responsive design issues across devices.
+
 June 13 - Implemented simplified version of booking conflict resolution.
+
 June 15 - Completed MVP features, began internal testing.
 
 Root Cause and Resolution:
