@@ -5,6 +5,7 @@ From May 1 to June 15, 2024, the development of my Airbnb clone project, "StaySp
 Timeline:
 
 May 1 - Project kickoff, began with user authentication and basic listing display.
+
 May 10 - Completed user profiles and property listing creation features.
 May 15 - Started work on the booking system, realized it was more complex than anticipated.
 May 20 - Struggled with date range selection and conflict checking in bookings.
