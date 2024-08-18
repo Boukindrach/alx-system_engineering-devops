@@ -1,6 +1,6 @@
 Postmortem: Solo Developer Airbnb Clone Project Delay
 
-##Issue Summary:
+## Issue Summary:
 From May 1 to June 15, 2024, the development of my Airbnb clone project, "StaySpot," experienced significant delays.
 Initially planned for completion by May 31, the project overran by 15 days.
 This delay affected my planned launch date and postponed beta testing with a small group of friends.
