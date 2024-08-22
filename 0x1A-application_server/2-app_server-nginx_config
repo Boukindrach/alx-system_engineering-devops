@@ -1,0 +1,12 @@
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+
+
+        server_name 54.90.48.7;
+
+        add_header X-Served-By 474716-web-01;
+
+        location = /airbnb-onepage/  {
+                proxy_pase http://127.0.0.1:5000/airbnb-onepage/;
+        }
